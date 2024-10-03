@@ -90,9 +90,9 @@ High resolution: `512 x 512`
 - **RadDet-9T-512** - `download link will be made available soon`
 - **NIST-CBRS-512** - `download link will be made available soon`
 
-You can also download the original (unmodified) NIST dataset [here](https://data.nist.gov/od/id/mds2-2116).
+You can also download the original (unmodified) NIST dataset [here](https://data.nist.gov/od/id/mds2-2116). Please also cite the [original work](https://www.nist.gov/publications/rf-dataset-incumbent-radar-signals-35-ghz-cbrs-band) by NIST if you wish to use their dataset in your research.
 
-Note, these datasets are quite large. It is recommended that you have more than 1 TB of disk storage avaialble.
+> Note, these datasets are quite large. It is recommended that you have more than 1 TB of disk storage available.
 
 ## Citation
 
