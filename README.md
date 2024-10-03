@@ -10,7 +10,7 @@ Our experiments considered several radar datasets:
 
 1. **RadDet-1T** - this is our proposed dataset, it contains up to 9 signal targets per frame.
 2. **RadDet-9T** - this is our proposed dataset, it contains at most 1 signal target per frame.
-3. **NIST-CBRS** - this is a radar dataset created by NIST containing at most 1 signal target per frame. We adapted the original dataset and modified it in our experiments, the modified version of the dataset (NIST-CBRS) is provided here for reference. Please cite the original work by NIST if you wish to adapt their dataset in your research.
+3. **NIST-CBRS** - this is a radar dataset [created by NIST](https://www.nist.gov/publications/rf-dataset-incumbent-radar-signals-35-ghz-cbrs-band) containing at most 1 signal target per frame. We adapted the [original dataset](https://data.nist.gov/od/id/mds2-2116) and modified it in our experiments, the modified version of the dataset (NIST-CBRS) is provided here for reference. Please cite the original work by NIST if you wish to adapt their dataset in your research.
 
 Each radar dataset contains max-hold spectrograms provided in three resolutions:
 
@@ -38,7 +38,7 @@ To investigate wideband spectrum detection in different scenarios, we provide Ra
 
 ## Configuration File
 
-Each dataset contains a configuration file called `data.yaml` provided in the YOLO-format. An example configuration file is shown below:
+Each dataset contains a configuration file called `data.yaml` provided in the standard YOLO-format. An example configuration file is shown below:
 
 ```yaml
 # Dataset root dir
@@ -64,6 +64,10 @@ names:
   10: FMCW
 ```
 
+## Annotations
+
+The bounding box annotations are provided as `.txt` files following the standard YOLO-format.
+
 ## Download Links
 
 The download links for each radar dataset are provided here. We provide three resolutions:
@@ -85,6 +89,10 @@ High resolution: `512 x 512`
 - **RadDet-1T-512** - `download link will be made available soon`
 - **RadDet-9T-512** - `download link will be made available soon`
 - **NIST-CBRS-512** - `download link will be made available soon`
+
+You can also download the original (unmodified) NIST dataset [here](https://data.nist.gov/od/id/mds2-2116).
+
+Note, these datasets are quite large. It is recommended that you have more than 1 TB of disk storage avaialble.
 
 ## Citation
 
