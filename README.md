@@ -1,8 +1,12 @@
 # Wideband Radar Detection Dataset (RadDet)
 
-This repo contains radar datasets accompanying the paper "RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection", submitted to the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025). 
+We introduce a challenging public dataset for radar detection (RadDet), comprising a large corpus of radar signals occupying a wideband spectrum across diverse radar density environments and signal-to-noise ratio settings. This repo contains the download links to our radar dataset and the associated conference paper "RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection". This work was accepted for publication at the 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025) in Hyderabad, India.
 
-We will release a preview of our paper soon. Stay tuned for updates.
+You can access our preprint 📄 here: https://arxiv.org/abs/2501.10407
+
+You can also watch our ICASSP 2025 presentation ▶️ here: https://youtu.be/H6LI_ZrdgeI
+
+> Huang, Z., Denman, S., Pemasiri, A., Martin, T., & Fookes, C. (2025). RadDet: A wideband dataset for real-time radar spectrum detection. ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 1–5. IEEE.
 
 ## Overview
 
@@ -20,6 +24,8 @@ Each radar dataset contains max-hold spectrograms provided in three resolutions:
 
 ## RadDet Details
 
+![RadDet Frames](Samples.png)
+
 RadDet introduces 11 radar classes, including 6 new LPI polyphase codes (P1, P2, P3, P4, Px, Zadoff-Chu) and a new wideband frequency-modulated continuous wave (FMCW), all coexisting across a 500 MHz band.
 
 RadDet contains a total of 40,000 radar frames provided in three parts:
@@ -29,8 +35,6 @@ RadDet contains a total of 40,000 radar frames provided in three parts:
 
 We sample SNR from a uniform distribution to produce signal frames that fall within −20 and 20 dB at a resolution of 8 dB. This means that there are more than 6,500 unique signals genreated per SNR.
 
-### Radar Environments
-
 To investigate wideband spectrum detection in different scenarios, we provide RadDet in two different radar environments:
 
 - Our sparse dataset (RadDet-1T) provides at most a single radar instance per frame whereby the probability of a radar being present in a scene is 50%.
@@ -38,7 +42,9 @@ To investigate wideband spectrum detection in different scenarios, we provide Ra
 
 ## Configuration File
 
-Each dataset contains a configuration file called `data.yaml` provided in the standard YOLO-format. An example configuration file is shown below:
+Each dataset contains a configuration file called `data.yaml` provided in the standard YOLO-format. You can use this configuration file to create custom data modules for your project.
+
+An example configuration file is shown below:
 
 ```yaml
 # Dataset root dir
@@ -64,38 +70,55 @@ names:
   10: FMCW
 ```
 
-## Annotations
+## Bounding Box Annotations
 
-The bounding box annotations are provided as `.txt` files following the standard YOLO-format.
+The bounding box annotations are provided as `.txt` files following the standard YOLO-format. Each `.txt` file corresponds to a unique `.png` file with the same name, i.e., `train/000000000000.txt` contains labels for `train/000000000000.png`.
+
+An example `.txt` file containing 6 bounding boxes:
+
+```txt
+0 0.611153 0.540000 0.250000 0.039563
+9 0.263525 0.460000 0.040000 0.116000
+4 0.273151 0.780000 0.550000 0.041063
+3 0.804995 0.620000 0.055000 0.041920
+3 0.259591 0.660000 0.035000 0.041920
+```
 
 ## Download Links
 
-The download links for each radar dataset are provided here. We provide three resolutions:
+The download links for each radar dataset are provided below. The total size of the combined datasets is approximately `54 GB`. We provide the data in three different resolutions in this release:
 
 Low resolution: `128 x 128`
 
-- **RadDet-1T-128** - `download link will be made available soon`
-- **RadDet-9T-128** - `download link will be made available soon`
-- **NIST-CBRS-128** - `download link will be made available soon`
+- [**RadDet-1T-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k128HW001Tv2.tar.gz) - approx. 556 MB
+- [**RadDet-9T-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k128HW009Tv2.tar.gz) - approx. 577 MB
+- [**NIST-CBRS-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold128Data.tar.gz) - approx. 1.2 GB
 
 Medium resolution: `256 x 256`
 
-- **RadDet-1T-256** - `download link will be made available soon`
-- **RadDet-9T-256** - `download link will be made available soon`
-- **NIST-CBRS-256** - `download link will be made available soon`
+- [**RadDet-1T-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k256HW001Tv2.tar.gz) - approx. 2.4 GB
+- [**RadDet-9T-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k256HW009Tv2.tar.gz) - approx. 2.4 GB
+- [**NIST-CBRS-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold256Data.tar.gz) - approx. 4.8 GB
 
 High resolution: `512 x 512`
 
-- **RadDet-1T-512** - `download link will be made available soon`
-- **RadDet-9T-512** - `download link will be made available soon`
-- **NIST-CBRS-512** - `download link will be made available soon`
+- [**RadDet-1T-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k512HW001Tv2.tar.gz) - approx. 11.2 GB
+- [**RadDet-9T-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k512HW009Tv2.tar.gz) - approx. 11.6 GB
+- [**NIST-CBRS-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold512Data.tar.gz) - approx. 18.9 GB
 
 You can also download the original (unmodified) NIST dataset [here](https://data.nist.gov/od/id/mds2-2116). Please also cite the [original work](https://www.nist.gov/publications/rf-dataset-incumbent-radar-signals-35-ghz-cbrs-band) by NIST if you wish to use their dataset in your research.
-
-> Note, these datasets are quite large. It is recommended that you have more than 1 TB of disk storage available.
 
 ## Citation
 
 Please cite our conference paper if you find it helpful for your research. Cheers.
 
-We will release a preview of our paper soon. Stay tuned for updates.
+```
+@inproceedings{huang2025raddet,
+  title={RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection},
+  author={Huang, Zi and Denman, Simon and Pemasiri, Akila and Martin, Terrence and Fookes, Clinton},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+```
