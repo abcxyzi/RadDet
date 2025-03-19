@@ -88,19 +88,19 @@ An example `.txt` file containing 6 bounding boxes:
 
 The download links for each radar dataset are provided below. The total size of the combined datasets is approximately `54 GB`. We provide the data in three different resolutions in this release:
 
-Low resolution: `128 x 128`
+⚙️ Low resolution: `128 x 128`
 
 - [**RadDet-1T-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k128HW001Tv2.tar.gz) - approx. 556 MB
 - [**RadDet-9T-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k128HW009Tv2.tar.gz) - approx. 577 MB
 - [**NIST-CBRS-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold128Data.tar.gz) - approx. 1.2 GB
 
-Medium resolution: `256 x 256`
+⚙️ Medium resolution: `256 x 256`
 
 - [**RadDet-1T-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k256HW001Tv2.tar.gz) - approx. 2.4 GB
 - [**RadDet-9T-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k256HW009Tv2.tar.gz) - approx. 2.4 GB
 - [**NIST-CBRS-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold256Data.tar.gz) - approx. 4.8 GB
 
-High resolution: `512 x 512`
+⚙️ High resolution: `512 x 512`
 
 - [**RadDet-1T-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k512HW001Tv2.tar.gz) - approx. 11.2 GB
 - [**RadDet-9T-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k512HW009Tv2.tar.gz) - approx. 11.6 GB
@@ -110,7 +110,7 @@ You can also download the original (unmodified) NIST dataset [here](https://data
 
 ## Citation
 
-Please cite our conference paper if you find it helpful for your research. Cheers.
+💡 Please cite our conference paper if you find it helpful for your research. Cheers.
 
 ```
 @inproceedings{huang2025raddet,
