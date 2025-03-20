@@ -122,3 +122,16 @@ You can also download the original (unmodified) NIST dataset [here](https://data
   organization={IEEE}
 }
 ```
+
+💡 Our previous work may also be of interest to you:
+
+```latex
+@inproceedings{huang2024multi,
+  title={Multi-Stage Learning for Radar Pulse Activity Segmentation},
+  author={Huang, Zi and Pemasiri, Akila and Denman, Simon and Fookes, Clinton and Martin, Terrence},
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={7340--7344},
+  year={2024},
+  organization={IEEE}
+}
+```
