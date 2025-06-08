@@ -1,6 +1,6 @@
 # Wideband Radar Detection Dataset (RadDet)
 
-We introduce a challenging public dataset for radar detection (RadDet), comprising a large corpus of radar signals occupying a wideband spectrum across diverse radar density environments and signal-to-noise ratio settings. This repo contains the download links to our radar dataset and the associated conference paper "RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection". This work was accepted for publication at the 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025) in Hyderabad, India.
+We introduce a challenging public dataset for radar detection (RadDet), comprising a large corpus of radar signals occupying a wideband spectrum across diverse radar density environments and signal-to-noise ratio settings. This repo contains the download links to our radar dataset and the associated conference paper "RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection". This work was published at the 2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025) in Hyderabad, India.
 
 You can access our preprint 📄 here: https://arxiv.org/abs/2501.10407
 
@@ -86,25 +86,44 @@ An example `.txt` file containing 6 bounding boxes:
 
 ## Download Links
 
-The download links for each radar dataset are provided below. The total size of the combined datasets is approximately `54 GB`. We provide the data in three different resolutions in this release:
+The official RadDet dataset can be downloaded from the [QUT Research Data Repository](https://data.researchdatafinder.qut.edu.au/dataset/raddet). The total size of the combined datasets is approximately `54 GB`. We provide the data in three different resolutions in this release:
 
 ⚙️ Low resolution: `128 x 128`
 
-- [**RadDet-1T-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k128HW001Tv2.tar.gz) - approx. 556 MB
-- [**RadDet-9T-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k128HW009Tv2.tar.gz) - approx. 577 MB
-- [**NIST-CBRS-128**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold128Data.tar.gz) - approx. 1.2 GB
+- **RadDet-1T-128** - approx. 556 MB
+- **RadDet-9T-128** - approx. 577 MB
+- **NIST-CBRS-128** - approx. 1.2 GB
 
 ⚙️ Medium resolution: `256 x 256`
 
-- [**RadDet-1T-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k256HW001Tv2.tar.gz) - approx. 2.4 GB
-- [**RadDet-9T-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k256HW009Tv2.tar.gz) - approx. 2.4 GB
-- [**NIST-CBRS-256**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold256Data.tar.gz) - approx. 4.8 GB
+- **RadDet-1T-256** - approx. 2.4 GB
+- **RadDet-9T-256** - approx. 2.4 GB
+- **NIST-CBRS-256** - approx. 4.8 GB (2 parts)
 
 ⚙️ High resolution: `512 x 512`
 
-- [**RadDet-1T-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k512HW001Tv2.tar.gz) - approx. 11.2 GB
-- [**RadDet-9T-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/RadDet40k512HW009Tv2.tar.gz) - approx. 11.6 GB
-- [**NIST-CBRS-512**](https://raddet.s3.ap-southeast-2.amazonaws.com/NISTSpecMaxHold512Data.tar.gz) - approx. 18.9 GB
+- **RadDet-1T-512** - approx. 11.2 GB (3 parts)
+- **RadDet-9T-512** - approx. 11.6 GB (3 parts)
+- **NIST-CBRS-512** - approx. 18.9 GB (5 parts)
+
+To extract and combine multiple parts of the dataset, for example:
+
+```bash
+# We want to combine these parts into a single file
+raddet40k512hw001tv2.tar.gz-part-1-of-3
+raddet40k512hw001tv2.tar.gz-part-2-of-3
+raddet40k512hw001tv2.tar.gz-part-3-of-3
+```
+
+Run the following commands once the individual parts have been downloaded to a local directory:
+
+```bash
+# Combine the individual parts into a single .tar.gz archive
+cat raddet40k512hw001tv2.tar.gz-part-* > raddet40k512hw001tv2.tar.gz
+
+# Unpack the .tar.gz archive to retrieve the dataset
+tar -xzf raddet40k512hw001tv2.tar.gz
+```
 
 You can also download the original (unmodified) NIST dataset [here](https://data.nist.gov/od/id/mds2-2116). Please also cite the [original work](https://www.nist.gov/publications/rf-dataset-incumbent-radar-signals-35-ghz-cbrs-band) by NIST if you wish to use their dataset in your research.
 
