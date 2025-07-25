@@ -1,4 +1,4 @@
-![arXiv](https://img.shields.io/badge/arXiv-2501.10407-b31b1b.svg) [![Kaggle](https://img.shields.io/badge/Kaggle-RadDet-blue?logo=kaggle)](https://www.kaggle.com/datasets/abcxyzi/raddet-icassp-2025) ![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.10407-b31b1b.svg)](https://arxiv.org/abs/2501.10407) [![Kaggle](https://img.shields.io/badge/Kaggle-RadDet-blue?logo=kaggle)](https://www.kaggle.com/datasets/abcxyzi/raddet-icassp-2025) [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Radar Spectrum Detection Dataset (RadDet)
 
@@ -11,6 +11,15 @@ You can also watch our ICASSP 2025 presentation ▶️ here: https://youtu.be/H6
 > Huang, Z., Denman, S., Pemasiri, A., Martin, T., & Fookes, C. (2025). RadDet: A wideband dataset for real-time radar spectrum detection. ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 1–5. IEEE.
 
 ## Overview
+
+Quick links:
+
+- [RadDet Details](#raddet-details)
+- [Configuration File](#configuration-file)
+- [Bounding Box Annotations](#bounding-box-annotations)
+- [Download Instructions](#download-instructions)
+- [Extracting Dataset Parts](#extracting-dataset-parts)
+- [Citation](#citation)
 
 Our experiments considered several radar datasets:
 
@@ -88,27 +97,28 @@ An example `.txt` file containing 5 bounding boxes:
 3 0.259591 0.660000 0.035000 0.041920
 ```
 
-## Download Links
+## Download Instructions
 
-The official RadDet dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/abcxyzi/raddet-icassp-2025). The total size of the combined datasets is approximately `58 GB`. We provide the data in three different resolutions in this release:
+The official RadDet dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/abcxyzi/raddet-icassp-2025). The total size of the combined datasets is approximately `58.43 GB`. We provide the data in three different resolutions in this release:
+
 
 ⚙️ Low resolution: `128 x 128`
 
-- **RadDet-1T-128** - approx. 0.5 GB
-- **RadDet-9T-128** - approx. 0.5 GB
-- **NIST-CBRS-128** - approx. 1 GB
+- **RadDet-1T-128 (RadDet40k128HW001Tv2.tar)** - approx. 0.5 GB
+- **RadDet-9T-128 (RadDet40k128HW009Tv2.tar)** - approx. 0.5 GB
+- **NIST-CBRS-128 (NISTSpecMaxHold128Data.tar)** - approx. 1 GB
 
 ⚙️ Medium resolution: `256 x 256`
 
-- **RadDet-1T-256** - approx. 2.5 GB
-- **RadDet-9T-256** - approx. 2.5 GB
-- **NIST-CBRS-256** - approx. 5 GB (2 parts)
+- **RadDet-1T-256 (RadDet40k256HW001Tv2.tar)** - approx. 2.5 GB
+- **RadDet-9T-256 (RadDet40k256HW009Tv2.tar)** - approx. 2.5 GB
+- **NIST-CBRS-256 (NISTSpecMaxHold256Data.tar)** - approx. 5 GB (2 parts)
 
 ⚙️ High resolution: `512 x 512`
 
-- **RadDet-1T-512** - approx. 12 GB (4 parts)
-- **RadDet-9T-512** - approx. 12 GB (4 parts)
-- **NIST-CBRS-512** - approx. 20 GB (6 parts)
+- **RadDet-1T-512 (RadDet40k512HW001Tv2.tar)** - approx. 12 GB (4 parts)
+- **RadDet-9T-512 (RadDet40k512HW009Tv2.tar)** - approx. 12 GB (4 parts)
+- **NIST-CBRS-512 (NISTSpecMaxHold512Data.tar)** - approx. 20 GB (6 parts)
 
 ## Extracting Dataset Parts
 
