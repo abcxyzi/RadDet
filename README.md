@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2501.10407-b31b1b.svg)](https://arxiv.org/abs/2501.10407) [![Kaggle](https://img.shields.io/badge/Kaggle-RadDet-blue?logo=kaggle)](https://www.kaggle.com/datasets/abcxyzi/raddet-icassp-2025) [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.10407-b31b1b.svg)](https://arxiv.org/abs/2501.10407) [![Kaggle](https://img.shields.io/badge/Kaggle-RadDet-blue?logo=kaggle)](https://www.kaggle.com/datasets/abcxyzi/raddet-icassp-2025) [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Radar Spectrum Detection Dataset (RadDet)
 
