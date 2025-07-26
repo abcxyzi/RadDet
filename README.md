@@ -104,30 +104,30 @@ The official RadDet dataset can be downloaded from [Kaggle](https://www.kaggle.c
 
 ⚙️ Low resolution: `128 x 128`
 
-- **RadDet-1T-128 (RadDet40k128HW001Tv2.tar)** - approx. 0.5 GB
-- **RadDet-9T-128 (RadDet40k128HW009Tv2.tar)** - approx. 0.5 GB
-- **NIST-CBRS-128 (NISTSpecMaxHold128Data.tar)** - approx. 1 GB
+- **RadDet-1T-128** - approx. file size of 0.5 GB
+- **RadDet-9T-128** - approx. file size of 0.5 GB
+- **NIST-CBRS-128** - approx. file size of 1 GB
 
 ⚙️ Medium resolution: `256 x 256`
 
-- **RadDet-1T-256 (RadDet40k256HW001Tv2.tar)** - approx. 2.5 GB
-- **RadDet-9T-256 (RadDet40k256HW009Tv2.tar)** - approx. 2.5 GB
-- **NIST-CBRS-256 (NISTSpecMaxHold256Data.tar)** - approx. 5 GB (2 parts)
+- **RadDet-1T-256** - approx. file size of 2.5 GB
+- **RadDet-9T-256** - approx. file size of 2.5 GB
+- **NIST-CBRS-256** - approx. file size of 5 GB (2 parts)
 
 ⚙️ High resolution: `512 x 512`
 
-- **RadDet-1T-512 (RadDet40k512HW001Tv2.tar)** - approx. 12 GB (4 parts)
-- **RadDet-9T-512 (RadDet40k512HW009Tv2.tar)** - approx. 12 GB (4 parts)
-- **NIST-CBRS-512 (NISTSpecMaxHold512Data.tar)** - approx. 20 GB (6 parts)
+- **RadDet-1T-512** - approx. file size of 12 GB (4 parts)
+- **RadDet-9T-512** - approx. file size of 12 GB (4 parts)
+- **NIST-CBRS-512** - approx. file size of 20 GB (6 parts)
 
 ## Extracting Dataset Parts
 
-> There should be 21 files in total.
+> There should be a total of 21 downloadable `tar` files. These files will need to be extracted and re-combined to obtain the original datasets.
 
 To extract and combine multiple parts of the dataset, for example:
 
 ```bash
-# We want to re-combine these parts into a single file
+# We want to re-combine these parts into a single "raddet40k512hw001tv2.tar" file
 raddet40k512hw001tv2.tar.part-aa
 raddet40k512hw001tv2.tar.part-ab
 raddet40k512hw001tv2.tar.part-ac
@@ -152,11 +152,12 @@ You can also download the original (unmodified) NIST dataset [here](https://data
 
 ```
 @inproceedings{huang2025raddet,
-  title={RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection},
-  author={Huang, Zi and Denman, Simon and Pemasiri, Akila and Martin, Terrence and Fookes, Clinton},
-  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={1--5},
-  year={2025},
-  organization={IEEE}
+  author    = {Zi Huang and Simon Denman and Akila Pemasiri and Terrence Martin and Clinton Fookes},
+  title     = {RadDet: A Wideband Dataset for Real-Time Radar Spectrum Detection},
+  booktitle = {Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year      = {2025},
+  pages     = {1--5},
+  doi       = {10.1109/ICASSP49660.2025.10887772},
+  keywords  = {Time-frequency analysis, Annotations, Radar detection, Radar, Speech recognition, Benchmark testing, Real-time systems, Wideband, Signal resolution, Signal to noise ratio, Spectrum sensing, Radar signal recognition, Realtime detection, Wideband radar dataset}
 }
 ```
