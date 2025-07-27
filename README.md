@@ -21,13 +21,13 @@ Quick links:
 - [Extracting Dataset Parts](#extracting-dataset-parts)
 - [Citation](#citation)
 
-Our experiments considered several radar datasets:
+⚙️ There are several radar datasets presented in our paper:
 
 1. **RadDet-1T** - this is our proposed dataset, it contains up to 9 signal targets per frame.
 2. **RadDet-9T** - this is our proposed dataset, it contains at most 1 signal target per frame.
 3. **NIST-CBRS** - this is a radar dataset [created by NIST](https://www.nist.gov/publications/rf-dataset-incumbent-radar-signals-35-ghz-cbrs-band) containing at most 1 signal target per frame. We adapted the [original dataset](https://data.nist.gov/od/id/mds2-2116) and modified it in our experiments, the modified version of the dataset (NIST-CBRS) is provided here for reference. Please cite the original work by NIST if you wish to adapt their dataset in your research.
 
-Each radar dataset contains max-hold spectrograms provided in three resolutions:
+⚙️ Each radar dataset contains max-hold spectrograms provided in three resolutions:
 
 - `128 x 128` - 128 by 128 spectrograms, please refer to our paper for the specific t-f resolution.
 - `256 x 256` - 256 by 256 spectrograms, please refer to our paper for the specific t-f resolution.
@@ -46,10 +46,12 @@ We sample SNR from a uniform distribution to produce signal frames that fall wit
 
 To investigate wideband spectrum detection in different scenarios, we provide RadDet in two different radar environments:
 
-- Our sparse dataset (RadDet-1T) provides at most a single radar instance per frame whereby the probability of a radar being present in a scene is 50%.
+- Our sparse dataset (RadDet-1T) provides at most a single radar instance per frame whereby the probability of a radar being present in a scene is 50%. Note, the notation `1T` simplt means a single target.
 - Our dense dataset (RadDet-9T) contains up to 9 radar instances per frame where the probability of background (noise-only) frames is 10%. RadDet-9T represents a conservative dense maritime radar environment.
 
-Example frames from RadDet:
+### RadDet Frame
+
+Visualisation of a frame from RadDet:
 
 ![RadDet Frames](Samples.png)
 
