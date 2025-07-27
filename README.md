@@ -51,7 +51,7 @@ To investigate wideband spectrum detection in different scenarios, we provide Ra
 
 ### RadDet Frame
 
-Visualisation of a frame from RadDet:
+Visualisation of frames from RadDet:
 
 ![RadDet Frames](Samples.png)
 
